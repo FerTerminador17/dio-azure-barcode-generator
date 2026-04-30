@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerador de Código de Barras</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <div class="headline">
+        <h1>Gerador de Código de Barras</h1>
+        <p>Informe a data de vencimento e o valor para gerar o barcode.</p>
+      </div>
+
+      <form id="barcodeForm" class="form">
+        <label for="dataVencimento">Data de vencimento</label>
+        <input type="date" id="dataVencimento" name="dataVencimento" required />
+
+        <label for="valor">Valor (R$)</label>
+        <input type="number" id="valor" name="valor" min="1" step="0.01" placeholder="100.00" required />
+
+        <button type="submit">Gerar Barcode</button>
+      </form>
+
+      <div id="result" class="result hidden">
+        <div class="result-block">
+          <strong>Barcode gerado</strong>
+          <div class="barcode-container">
+            <p id="barcodeText" class="barcode-text"></p>
+            <button id="copyButton" type="button" class="copy-btn" title="Copiar código">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="result-block">
+          <strong>Imagem do código</strong>
+          <div class="image-wrapper">
+            <img id="barcodeImage" alt="Código de barras gerado" />
+          </div>
+        </div>
+
+        <button id="validateButton" type="button" disabled>Validar Barcode</button>
+      </div>
+
+      <p id="message" class="message"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
