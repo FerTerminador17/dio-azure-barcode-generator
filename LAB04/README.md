@@ -22,13 +22,15 @@ Destaque Visual: Design focado em UX com suporte de CSS Flexbox.
 1. Configuração e Integração Cloud
 Neste estágio, realizei a configuração da string de conexão e o mapeamento dos endpoints no Visual Studio. É o momento em que garantimos que o "motor" da aplicação consegue se comunicar com os serviços da Microsoft Azure.
 
+
 <img width="1823" height="584" alt="image" src="https://github.com/user-attachments/assets/c776d187-de5d-4ff2-b9c3-be2256783404" />
 
 
-2. Back-end em Operação (Azure Functions)
-Aqui vemos o console do Azure Functions em operação. Este log prova que a função Serverless está rodando sem erros, aguardando as requisições do Front-end para processar os boletos.
+2. Back-end em Operação (Azure Functions Runtime)
+Aqui vemos o console do Azure Functions em operação. Este log prova que o Worker Process foi iniciado com sucesso, as funções foram carregadas e o sistema está "ouvindo" as requisições na porta local, pronto para processar os dados enviados pelo Front-end.
 
-<img width="1823" height="584" alt="image" src="https://github.com/user-attachments/assets/1301c9de-1b05-46a7-90b3-76feafff2b9e" />
+
+<img width="1885" height="890" alt="image" src="https://github.com/user-attachments/assets/97fcc208-b977-4d4d-a34d-87adc84484c6" />
 
 
 
@@ -36,9 +38,12 @@ Aqui vemos o console do Azure Functions em operação. Este log prova que a fun�
 A prova real do projeto funcionando. O usuário preenche os campos e o sistema retorna o código de barras com o layout refinado e centralizado, destacando a sequência numérica para facilitar a leitura.
 
 
+
 <img width="717" height="865" alt="image" src="https://github.com/user-attachments/assets/625e714c-82fb-4c9d-bcaa-6be2c48136ea" />
 
+
 <img width="810" height="960" alt="image" src="https://github.com/user-attachments/assets/c58a22e9-e3fc-49c2-96c5-30bf5e2d3577" />
+
 
 
 💡 Insights para Business Intelligence
